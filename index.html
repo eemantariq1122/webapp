@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realtime Data Plot</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      background-color: black; /* Set the background color of the body to black */
+      color: white; /* Set the text color to white */
+    }
+    
+    canvas {
+      max-width: 100%; /* Adjust the maximum width of the canvas */
+      max-height: 92%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Live Data Transmission</h1> <!-- Page heading -->
+  <div>
+    <canvas id="voltageChart"></canvas> <!-- This is where the chart will be displayed -->
+    <p id="latestVoltage">Latest Voltage: -</p> <!-- Display latest voltage value here -->
+  </div>
+
+  <!-- Include browser.js file -->
+  <script src="browser.js"></script>
+</body>
+</html>
